@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srijil V | Portfolio</title>
+  <link rel="icon" href="https://img.icons8.com/fluency/48/star.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+        box-sizing: border-box;
+      }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #f9f9f9, #e0f7fa);
+      color: #222;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #2b2d42, #4a4e69);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/connected.png');
+      opacity: 0.1;
+      z-index: 0;
+    }
+    header img {
+      position: relative;
+      z-index: 1;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 5px solid #fff;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.05);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: #fff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #2b2d42;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .icons {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .icons a {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      padding: 0.4rem;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+    .icons a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffd166;
+    }
+    .job-title {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .project {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      padding-left: 1rem;
+      border-left: 3px solid #ccc;
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .project img:hover {
+      transform: scale(1.03);
+    }
+    ul {
+      padding-left: 1.5rem;
+      color: #444;
+      font-size: 0.95rem;
+    }
+    .project-desc {
+      margin-top: 0.5rem;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #2b2d42;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #4a4e69;
+    }
+    .hidden {
+      display: none;
+    }
+    .contact-links {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #2b2d42;
+      margin-top: 10px;
+    }
+    .contact-links a {
+      color: #2b2d42;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2b2d42;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background-color: #4a4e69;
+    }
+    @media screen and (max-width: 768px) {
+      .icons {
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      section {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .btn, .contact-form button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://portfolio-srijil.s3.us-east-1.amazonaws.com/AAC.jpg" alt="Srijil V">
+  <h1 style="color: #ffd166">Srijil V</h1>
+  <p>Technical Lead | Golang | Microservices | AWS</p>
+  <div class="icons">
+    <a href="https://linkedin.com/in/srijilv" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+    <a href="https://wa.me/919633022156" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://facebook.com/srijilv" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+    <a href="https://instagram.com/srijilv" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/srijilv" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+  </div>
+</header>
+
+<div class="container">
+  <section style="text-align: center;">
+    <h2>Contact Me</h2>
+    <p style="font-size: 1.1rem;">
+      <a href="mailto:srijilvijayan@gmail.com" style="color: #2b2d42; text-decoration: none;" onclick="toggleContactForm()">
+        <i class="fas fa-envelope" style="color: #4a4e69; margin-right: 8px;"></i>
+        srijilvijayan@gmail.com
+      </a>
+    </p>
+    <div class="contact-links">
+      <a href="https://wa.me/919633022156" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="tel:+919633022156"><i class="fas fa-phone"></i> Call</a>
+    </div>
+
+    <a href="https://portfolio-srijil.s3.us-east-1.amazonaws.com/srijilv_golang.pdf" download class="btn" style="display:inline-block; padding:10px 20px; background-color:#2b2d42; color:#fff; border-radius:6px; text-decoration:none; margin-top:10px;">Download Resume</a>
+    <br />
+    </section>
+
+  <section id="contact-form-section" class="hidden">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I'm a Technical Lead with 9+ years of experience in backend development, architecture, and DevOps. I specialize in designing scalable, microservices-based applications for the healthcare and travel industries. I lead agile teams and build solutions using Go, AWS, PostgreSQL, Docker, and more.</p>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Languages: Go, PHP, JavaScript</li>
+      <li>Frameworks: Zend (2 & 3), AngularJS, JQuery</li>
+      <li>Databases: PostgreSQL, MySQL, MongoDB, Redis, Apache CouchDB</li>
+      <li>Cloud & DevOps: AWS (S3, SES, SNS, SQS), Docker, Kubernetes, Jenkins, SonarQube, Grafana</li>
+      <li>Protocols & APIs: REST, gRPC, HL7</li>
+      <li>Tools: Swagger, OWASP ZAP, Git, Contentful, Twilio, OneSignal</li>
+      <li>Soft Skills: Quick learner, efficient coder, good time management, team mentoring, problem solving</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <h3>ZH Healthcare INC (2018 - Present)</h3>
+    <p>Leading technical strategy and development of modern healthcare applications for global clients.</p>
+    <ul>
+      <li>Designed and deployed microservices in Go with PostgreSQL, Redis, Docker, and AWS.</li>
+      <li>Integrated Contentful, Twilio, and other APIs; leveraged SQS, SNS, SES, S3 extensively.</li>
+    </ul>
+
+    <div class="project">
+      <h4>blueBriX Platform</h4>
+      <p class="project-desc">A low-code healthcare app builder that allows drag-and-drop creation of modules, forms, and workflows. Built using a scalable Go backend and microservice architecture, supporting custom APIs and app-specific business logic.</p>
+    </div>
+
+    <div class="project">
+      <h4>blueEHR</h4>
+      <p class="project-desc">An advanced EHR system offering patient management, billing, inventory, and reporting. Developed modules for encounter workflows, audit tracking, and secured communication.</p>
+    </div>
+
+    <div class="project">
+      <h4>Patient Portal</h4>
+      <p class="project-desc">Portal for patients to securely book appointments, message providers, and access health records. Integrated OAuth and two-factor authentication for enhanced security.</p>
+    </div>
+
+  </section>
+
+  <section>
+    <h3>Nucore Software Solutions (2015 - 2018)</h3>
+    <p>Worked on enterprise travel accounting systems and automation platforms for global travel agencies.</p>
+    <ul>
+      <li>Built financial modules using PHP and PostgreSQL.</li>
+      <li>Integrated SOAP-based APIs and performed large-scale data migrations.</li>
+    </ul>
+
+    <div class="project">
+      <h4>Traacs Wave</h4>
+      <p class="project-desc">A robust travel accounting suite supporting reconciliation, invoicing, and supplier reporting. Developed features like tax computation, real-time ledger validation, and automated GDS feed handling.</p>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>
